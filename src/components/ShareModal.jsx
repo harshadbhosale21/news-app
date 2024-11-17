@@ -39,7 +39,7 @@ const ShareModal = ({ isOpen, onClose, url, heading, appName, logo, img }) => {
             />
 
             <div className="fixed inset-0  px-2 flex items-end justify-center  bg-black bg-opacity-50">
-                <div className="bg-white  w-full p-4 rounded-t-xl shadow-lg mb-16">
+                <div className="bg-white  w-full lg:w-1/2 p-4 rounded-t-xl shadow-lg mb-16">
                     {logo && (
                         <div className="flex justify-center mb-4">
                             <img src={logo} alt={`${appName} logo`} className="h-16 w-auto" />

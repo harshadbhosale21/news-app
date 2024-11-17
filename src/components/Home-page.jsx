@@ -356,7 +356,7 @@ export default function HomePage() {
 
     return (
         <>
-            <div className="content mt-2 lg:w-1/2 lg:mx-auto">
+            <div className="content mt-2 w-full lg:w-1/2 lg:mx-auto">
                 {renderNewsCards()}
                 <ShareModal
                     appName={'Pratidin Varta'}

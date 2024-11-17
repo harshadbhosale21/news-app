@@ -11,7 +11,7 @@ export default function Home() {
       <section className="pb-24">
         <HomePage />
       </section>
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 } 

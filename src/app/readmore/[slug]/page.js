@@ -33,7 +33,6 @@ export default function News({ params }) {
     const fetchNewsData = async () => {
         try {
             const response = await axios.get(`${process.env.NEXT_PUBLIC_API_URL}/api/publicApi/getSingleNews?viewerId=${null}&reporterId=${null}&id=${params.slug}`);
-            console.log('singl-news', response)
             setNewsData(response.data.obj);
             setLikedItems(response.data.isLike)
             const image1 = response.data.obj.images[0]
@@ -54,8 +53,9 @@ export default function News({ params }) {
     return (
         <>
             <div className="bg-gray-100  min-h-screen flex flex-col lg:w-1/2 md:-1/2 lg:mx-auto md:mx-auto">
-                <header className="bg-white shadow-md p-4">
-                    <h1 className="text-xl text-black font-bold text-center">News Heading</h1>
+                <header className="bg-white shadow-md p-4 items-center flex">
+                    <img src="/new-pratidin-logo.webp" alt="pratidin varta logo" className="w-20 me-10" />
+                    <h1 className="text-2xl text-black font-bold text-center">News Heading</h1>
                 </header>
                 <main className="flex-1 p-4">
                     {
