@@ -10,7 +10,7 @@ const ShareModal = ({ isOpen, onClose, url, heading, appName, logo, img }) => {
     const shareUrl = url;
     const shareTitle = `${heading} - ${appName}`;
     const shareDescription = `Check out this news on ${appName}: ${heading}`;
-    const shareImg = `https://pratidin-varta-api.softthenext.com/api/publicApi/downloadDocument?name=${img}`
+    const shareImg = `https://pratidin-varta-api.softthenext.com/api/publicApi/downloadDocument?name=e2a1fc516.webp`
 
     return (
         <>
