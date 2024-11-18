@@ -64,7 +64,7 @@ const ShareModal = ({ isOpen, onClose, url, heading, appName, logo, img }) => {
                         </TwitterShareButton>
                         <WhatsappShareButton
                             url={`\n${shareUrl}`}
-                            title={heading}
+                            title={shareDescription}
                         >
                             <WhatsappIcon size={50} round />
                         </WhatsappShareButton>
