@@ -14,7 +14,7 @@ const ShareModal = ({ isOpen, onClose, url, heading, appName, logo, img }) => {
 
     return (
         <>
-            <NextSeo
+            {/* <NextSeo
                 title={shareTitle}
                 description={shareDescription}
                 openGraph={{
@@ -36,7 +36,7 @@ const ShareModal = ({ isOpen, onClose, url, heading, appName, logo, img }) => {
                     title: shareTitle,
                     description: shareDescription,
                 }}
-            />
+            /> */}
 
             <div className="fixed inset-0  px-2 flex items-end justify-center  bg-black bg-opacity-50">
                 <div className="bg-white  w-full lg:w-1/2 p-4 rounded-t-xl shadow-lg mb-16">
