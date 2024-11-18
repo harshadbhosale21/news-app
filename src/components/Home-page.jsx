@@ -363,7 +363,7 @@ export default function HomePage() {
                     logo='/new-pratidin-logo.webp'
                     isOpen={isShareModalOpen}
                     onClose={() => setIsShareModalOpen(false)}
-                    url={shareItem ? `https://pratidin-varta.softthenext.com/readMore/${shareItem.id}` : ''}
+                    url={shareItem ? `https://news-app-iota-five.vercel.app/readmore/${shareItem.id}` : ''}
                     heading={shareItem ? shareItem.heading : ''}
                     img={shareItem ? shareItem.images[0] : 'imge'}
                 />
