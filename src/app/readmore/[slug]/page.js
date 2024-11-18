@@ -10,9 +10,9 @@ export async function generateMetadata({ params }) {
     const newsRes = await axios.get(`${process.env.NEXT_PUBLIC_API_URL}/api/publicApi/getSingleNews?viewerId=${null}&reporterId=${null}&id=${slug}`)
 
     const heading = newsRes.data.obj.heading || "News";
-    const img = newsRes.data.obj.images?.[0] || "sign.png";
-    // const imgUrl = `https://pratidin-varta-api.softthenext.com/api/publicApi/downloadDocument?name=${img}`
-    const imgUrl = `https://www.pexels.com/photo/cat-sitting-near-building-wall-24205867/`
+    const img = newsRes.data.obj.images[0] || "sign.png";
+    const imgUrl = `https://pratidin-varta-api.softthenext.com/api/publicApi/downloadDocument?name=${img}`
+    // const imgUrl = `https://www.pexels.com/photo/cat-sitting-near-building-wall-24205867/`
 
     return {
         title: `${heading} - Pratidin Varta`,
