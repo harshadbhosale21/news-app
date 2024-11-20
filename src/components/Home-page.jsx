@@ -366,6 +366,7 @@ export default function HomePage() {
                     url={shareItem ? `https://news-app-iota-five.vercel.app/readmore/${shareItem.id}` : ''}
                     heading={shareItem ? shareItem.heading : ''}
                     img={shareItem ? shareItem.images[0] : 'imge'}
+                    video={shareItem ? shareItem.video : 'video'}
                 />
             </div>
         </>
